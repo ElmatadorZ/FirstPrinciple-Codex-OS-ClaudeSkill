@@ -53,5 +53,3 @@ CONFIDENCE: [X%] | SHADOW VERDICT: [...] | UNKNOWNS: [...] | FAILURE COND: [...]
 ```
 
 *Example — FPCOS v1.0 — Bunyawat Dechanon (ElmatadorZ)*
-0 / 17 copied
-⬇ COPY ALL TO CLIPBOARD
