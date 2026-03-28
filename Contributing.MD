@@ -55,5 +55,3 @@ introduce deliberate ambiguity or weaken verification standards will be rejected
 ---
 
 *FPCOS is maintained by Bunyawat Dechanon (ElmatadorZ)*
-0 / 17 copied
-⬇ COPY ALL TO CLIPBOARD
