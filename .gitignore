@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+NOTES.md
+TODO.md
+scratch/
