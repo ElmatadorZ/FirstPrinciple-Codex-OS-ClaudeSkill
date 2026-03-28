@@ -88,5 +88,3 @@ Test: "Would knowing this alternative change the decision? If no → omit."
 ---
 
 *FPCOS Reference — Bunyawat Dechanon (ElmatadorZ) — Open Cognitive License v1.0*
-0 / 17 copied
-⬇ COPY ALL TO CLIPBOARD
