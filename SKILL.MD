@@ -1,28 +1,17 @@
 ---
 name: "first-principle-codex-os"
-version: "1.0"
+version: "1/2026"
 author: "Bunyawat Dechanon (ElmatadorZ)"
 description: |
-  FIRST PRINCIPLE CODEX OS (FPCOS) v1.0 — Anti-hallucination Cognitive Base Layer.
+  FIRST PRINCIPLE CODEX OS (FPCOS) — Anti-hallucination Cognitive Base Layer for Claude Skills.
 
-  ALWAYS trigger this skill — do NOT skip — as the foundational OS for ALL complex
-  reasoning, analysis, design, strategy, or any task where output accuracy matters.
+  ALWAYS trigger — do NOT skip — for: claims, analysis, system design, recommendations, research synthesis, problem-solving, decision-making, coding architecture, financial analysis, scientific reasoning, philosophical inquiry, or ANY multi-step task where hallucination risk is non-trivial.
 
-  Mandatory triggers: any question involving claims, analysis, system design,
-  recommendations, research synthesis, problem-solving, decision-making, coding
-  architecture, financial analysis, scientific reasoning, philosophical inquiry,
-  or ANY multi-step task where hallucination risk is non-trivial.
+  BASE LAYER: runs BEFORE domain skills. Finance, coffee, strategy, medical, code, law — all inherit this OS. Cannot remove L0, L1, L4, L5.
 
-  This is the BASE LAYER. It runs BEFORE domain-specific skills activate.
-  Domain skills (finance, coffee, strategy, medical, code, law, etc.) inherit
-  this OS and cannot remove L0, L1, L4, or L5 from their pipeline.
+  Pipeline: Reality Anchor (L0) → Axiom Gate/Kalama10/Ariya4 (L1) → System Lens (L2) → Compound Mind (L3) → Shadow Gate NON-SKIPPABLE (L4) → Synthesis (L5)
 
-  Core pipeline: Reality Anchor (L0) → Axiom Gate (L1) → System Lens (L2)
-  → Compound Mind (L3) → Shadow Gate (L4, NON-SKIPPABLE) → Synthesis (L5)
-
-  License: Open Cognitive License v1.0 — Free use. 2% revenue fee applies only
-  if used as foundation of a system generating >$10M USD/year gross revenue.
-  Attribution required: "Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)"
+  License: Open Cognitive License v1.0. Free use. 2% fee if system revenue >$10M USD/year. Attribution: Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)
 license: "Open Cognitive License v1.0 — see LICENSE.md"
 ---
 
@@ -342,5 +331,3 @@ It is pattern completion wearing intelligence as a mask.
 - Compound Mind patterns → `references/COMPOUND_MIND_PATTERNS.md`
 - Skill inheritance examples → `references/SKILL_INHERITANCE.md`
 - Anti-hallucination patterns → `references/ANTI_HALLUCINATION.md`
-0 / 17 copied
-⬇ COPY ALL TO CLIPBOARD
