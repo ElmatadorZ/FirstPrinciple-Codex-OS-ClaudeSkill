@@ -45,5 +45,3 @@ Child skills pin to minor: `base_os_version: "1.0"`
 - [ ] Token budget optimization guide
 - [ ] Multi-agent council integration pattern
 - [ ] Performance benchmarks vs. unguided reasoning
-0 / 17 copied
-⬇ COPY ALL TO CLIPBOARD
