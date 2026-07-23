@@ -66,9 +66,9 @@ INPUT → [L0 Reality Anchor] → [L1 Axiom Gate]
 Built on First Principle Codex OS v1.0
 by Bunyawat Dechanon (ElmatadorZ)
 https://github.com/ElmatadorZ/first-principle-codex-os
-License: Open Cognitive License v1.0
+License: Apache-2.0
 ```
 
 ---
 
-*FPCOS Reference — Bunyawat Dechanon (ElmatadorZ) — Open Cognitive License v1.0*
+*FPCOS Reference — Bunyawat Dechanon (ElmatadorZ) — Apache-2.0*

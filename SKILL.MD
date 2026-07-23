@@ -11,8 +11,8 @@ description: |
 
   Pipeline: Reality Anchor (L0) → Axiom Gate/Kalama10/Ariya4 (L1) → System Lens (L2) → Compound Mind (L3) → Shadow Gate NON-SKIPPABLE (L4) → Synthesis (L5)
 
-  License: Open Cognitive License v1.0. Free use. 2% fee if system revenue >$10M USD/year. Attribution: Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)
-license: "Open Cognitive License v1.0 — see LICENSE.md"
+  License: Apache-2.0. Free use, including commercial. Attribution: Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)
+license: "Apache-2.0"
 ---
 
 # FIRST PRINCIPLE CODEX OS v1.0

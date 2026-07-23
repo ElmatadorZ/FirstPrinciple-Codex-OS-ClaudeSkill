@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "First Principle Codex OS (FPCOS)"
+message: "If you use FPCOS, please cite it as below."
+type: software
+authors:
+  - family-names: Dechanon
+    given-names: Bunyawat
+    alias: ElmatadorZ
+repository-code: 'https://github.com/ElmatadorZ/FirstPrincipleCodex-OS-Skill'
+abstract: >-
+  An anti-hallucination cognitive base layer for AI reasoning skills. Defines a
+  six-layer pipeline — Reality Anchor, Axiom Gate, System Lens, Compound Mind,
+  a non-skippable Shadow Gate, and Synthesis — that domain skills inherit and
+  may extend but not remove.
+keywords:
+  - ai-safety
+  - anti-hallucination
+  - claude-skills
+  - reasoning
+  - epistemology
+license: Apache-2.0
+version: '1.0'

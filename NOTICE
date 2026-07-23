@@ -1,0 +1,54 @@
+First Principle Codex OS (FPCOS)
+An anti-hallucination cognitive base layer for AI reasoning skills.
+
+Copyright 2024-2026 Bunyawat Dechanon (ElmatadorZ)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+--------------------------------------------------------------------------------
+Attribution
+--------------------------------------------------------------------------------
+Skills and systems that inherit FPCOS are asked (not required) to retain:
+
+    Built on FPCOS by Bunyawat Dechanon (ElmatadorZ)
+
+--------------------------------------------------------------------------------
+Naming and the non-removable layers
+--------------------------------------------------------------------------------
+The Apache License grants broad rights to use, modify, and redistribute this work,
+including commercially. It does NOT grant rights to the project's names or marks
+(Apache-2.0 Section 6, "Trademarks").
+
+FPCOS defines four layers that a conformant inheriting skill may not remove:
+
+    L0  Reality Anchor
+    L1  Axiom Gate
+    L4  Shadow Gate  (non-skippable self-critique)
+    L5  Synthesis
+
+A derivative that removes any of L0, L1, L4, or L5 MUST NOT be presented as
+"First Principle Codex OS" or "FPCOS", and MUST NOT imply endorsement by the
+author. Those layers are what the OS is; a version without them is a different
+thing wearing the name.
+
+This is a naming and accuracy requirement, not a restriction on use. The software
+freedoms granted by the Apache License are not conditioned on it.
+
+--------------------------------------------------------------------------------
+History
+--------------------------------------------------------------------------------
+Earlier releases were distributed under the "Open Cognitive License v1.0", a
+custom licence carrying a 2% gross-revenue clause above $10M USD/year. From this
+release forward the project is licensed under Apache-2.0 to remove adoption
+friction for organizations whose review processes require an OSI-approved licence.
+The prior licence text remains available in the git history.

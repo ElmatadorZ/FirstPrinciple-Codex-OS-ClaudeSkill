@@ -1,0 +1,78 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  skill:
+    name: skill integrity (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install
+        run: pip install --quiet pyyaml
+
+      # Read-only. Verifies SKILL.MD is installable (frontmatter well-formed)
+      # and structurally intact (L0/L1/L4/L5 present — see NOTICE).
+      - name: Validate SKILL.MD
+        run: python tools/validate_skill.py
+
+  links:
+    name: internal links resolve
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check relative markdown links
+        run: |
+          python - <<'PY'
+          import pathlib, re, sys
+          bad = []
+          for md in pathlib.Path('.').rglob('*.[mM][dD]'):
+              if '.git' in md.parts: continue
+              for link in re.findall(r'\[[^\]]*\]\(([^)#]+)\)', md.read_text(encoding='utf-8')):
+                  if link.startswith(('http://', 'https://', 'mailto:')): continue
+                  target = (md.parent / link).resolve()
+                  if not target.exists():
+                      bad.append(f"{md}: {link}")
+          if bad:
+              print("Broken relative links:")
+              print("\n".join(f"  {b}" for b in bad)); sys.exit(1)
+          print("  OK  all relative links resolve")
+          PY
+
+  hygiene:
+    name: repo hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: No tree-glyph or extensionless filenames
+        run: |
+          python - <<'PY'
+          import pathlib, sys
+          allow = {'LICENSE', 'NOTICE', 'CODEOWNERS', 'Makefile', 'Dockerfile'}
+          skip = {'.git', '__pycache__', '.pytest_cache'}
+          probs = []
+          for p in pathlib.Path('.').rglob('*'):
+              if skip & set(p.parts) or not p.is_file(): continue
+              if any(c in p.name for c in '└├─│'): probs.append(f"tree glyph: {p}")
+              if not p.suffix and p.name not in allow and not p.name.startswith('.'):
+                  probs.append(f"missing extension: {p}")
+          if probs:
+              print("\n".join(f"  {x}" for x in probs)); sys.exit(1)
+          print("  OK  filenames clean")
+          PY

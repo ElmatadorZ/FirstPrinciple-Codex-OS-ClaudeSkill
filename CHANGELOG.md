@@ -16,7 +16,7 @@ All notable changes to First Principle Codex OS will be documented here.
 - Skill Interface Contract — 5 non-removable inheritance requirements
 - Cross-domain synthesis architecture
 - Anti-hallucination map (11 sources → 11 mechanisms)
-- Open Cognitive License v1.0
+- Apache-2.0
 - Full reference library (6 reference files)
 - Example skills for Finance, Research domains
 

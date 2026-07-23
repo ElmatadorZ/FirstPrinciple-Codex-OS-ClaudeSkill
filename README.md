@@ -2,7 +2,7 @@
 
 **Anti-Hallucination Cognitive Base Layer for Claude Skills**
 
-[![License: OCL v1.0](https://img.shields.io/badge/License-Open%20Cognitive%20License%20v1.0-00FFB2.svg)](./LICENSE.md)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0-7B6EFF.svg)](./CHANGELOG.md)
 [![Author](https://img.shields.io/badge/Author-ElmatadorZ-FF6B35.svg)](https://github.com/ElmatadorZ)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill%20Compatible-blue.svg)](https://claude.ai)
@@ -96,7 +96,8 @@ description: |
 fpcos/
 ├── SKILL.md                          ← Main skill file. Copy this.
 ├── README.md
-├── LICENSE.md
+├── LICENSE
+├── NOTICE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── references/
@@ -120,9 +121,14 @@ fpcos/
 
 ## License
 
-**Open Cognitive License v1.0**
-- ✅ Free — non-commercial & commercial revenue < $10M USD/year
-- 💰 2% gross revenue — systems generating > $10M USD/year
+**[Apache License 2.0](./LICENSE)** — OSI-approved, with an express patent grant.
+- ✅ Free to use, modify, and redistribute — including commercially, at any revenue
+- 📌 Keep the licence and [NOTICE](./NOTICE), and state any changed files
+- 🏷️ Apache §6 does not grant rights to the name: a derivative that removes **L0, L1, L4, or L5**
+  must be renamed and must not imply endorsement — those layers are what FPCOS *is*
+
+*(Earlier releases used the custom Open Cognitive License v1.0, which carried a 2% revenue clause.
+It was replaced to remove adoption friction for organisations requiring an OSI-approved licence.)*
 - 📌 Attribution required: *"Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)"*
 
 ---
