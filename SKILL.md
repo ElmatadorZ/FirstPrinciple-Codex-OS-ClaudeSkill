@@ -13,6 +13,19 @@ description: |
 
   License: Apache-2.0. Free use, including commercial. Attribution: Built on FPCOS v1.0 by Bunyawat Dechanon (ElmatadorZ)
 license: "Apache-2.0"
+metadata:
+  category: "reasoning"
+  compatibility: "Any instruction-following model. Single-file base layer — the whole
+    OS lives in this SKILL.md and needs no tools or runtime to operate."
+  requires_tools: false
+  role: "base-layer"
+  produces: "A hallucination-resistant reasoning pass: Reality Anchor, Known/Inferred/
+    Unknown separation with probabilities on inferences, a non-skippable Shadow Gate,
+    and a synthesis that states confidence and its own failure boundaries."
+  inherited_by: "Domain skills (finance, coffee, strategy, medical, code, law) run on
+    top of this layer and cannot remove L0, L1, L4, or L5."
+  not_for: "Being skipped. It is a base layer, not an optional add-on — its value is
+    that the Shadow Gate and the Reality Anchor cannot be bypassed."
 ---
 
 # FIRST PRINCIPLE CODEX OS v1.0

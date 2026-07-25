@@ -90,6 +90,29 @@ description: |
 
 ---
 
+## Verifying it
+
+FPCOS is a base layer that every domain skill inherits, so the thing to verify is that the
+non-removable layers are actually present and marked non-removable. Checked on every push, runnable
+locally:
+
+```bash
+pip install pytest pyyaml
+python tools/validate_skill.py   # frontmatter, license, and L0/L1/L4/L5 intact
+python -m pytest -q              # contract tests over SKILL.md
+```
+
+The tests hold the file to its promises: L0/L1/L4/L5 present, the Shadow Gate marked
+non-skippable, Known/Inferred/Unknown separation, a confidence field required at output, and the
+frontmatter license kept in agreement with the LICENSE file.
+
+> The skill file was `SKILL.MD` (uppercase extension). Claude's skill loader is case-sensitive and
+> looks for exactly `SKILL.md`, so on a case-sensitive host the base layer would not have loaded at
+> all. Renamed to `SKILL.md` (and the `example/*.MD` files likewise), with a test pinning the
+> canonical name.
+
+---
+
 ## Repo Structure
 
 ```
@@ -100,20 +123,23 @@ fpcos/
 ├── NOTICE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
-├── references/
+├── SECURITY.md
+├── CITATION.cff
+├── Reference/
 │   ├── CODEX_KALAMA.md
 │   ├── CODEX_ARIYA4.md
 │   ├── SHADOW_GATE_DEEP.md
 │   ├── COMPOUND_MIND_PATTERNS.md
 │   ├── SKILL_INHERITANCE.md
 │   └── ANTI_HALLUCINATION.md
-├── examples/
-│   ├── example-finance-skill.md
-│   └── example-research-skill.md
+├── example/
+│   ├── fpcos-finance-example.md
+│   └── fpcos-research-example.md
+├── tools/validate_skill.py           ← installability + integrity checker
+├── tests/test_skill_contract.py      ← contract tests (run in CI)
 └── .github/
+    ├── workflows/validate.yml        ← CI: skill integrity · tests · links · hygiene
     ├── ISSUE_TEMPLATE/
-    │   ├── bug_report.md
-    │   └── skill_proposal.md
     └── PULL_REQUEST_TEMPLATE.md
 ```
 

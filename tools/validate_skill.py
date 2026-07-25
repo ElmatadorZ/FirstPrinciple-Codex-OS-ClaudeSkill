@@ -2,7 +2,7 @@
 """
 validate_skill.py — integrity checks for FPCOS.
 
-READ-ONLY. This script never modifies SKILL.MD; it only verifies that the file
+READ-ONLY. This script never modifies SKILL.md; it only verifies that the file
 still satisfies the contract that makes it installable and makes it FPCOS.
 
 Two classes of check:
@@ -36,7 +36,7 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL = ROOT / "SKILL.MD"
+SKILL = ROOT / "SKILL.md"
 
 # The layers FPCOS declares non-removable. See NOTICE.
 NON_REMOVABLE = ["L0", "L1", "L4", "L5"]
@@ -113,7 +113,7 @@ def main() -> int:
             if not ok:
                 print(f"  - {n}" + (f" ({d})" if d else ""))
         return 1
-    print("SKILL.MD is installable and structurally intact.")
+    print("SKILL.md is installable and structurally intact.")
     return 0
 
 

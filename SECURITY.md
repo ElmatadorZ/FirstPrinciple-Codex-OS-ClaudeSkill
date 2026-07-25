@@ -22,7 +22,7 @@ Content that causes a skill running FPCOS to abandon the pipeline when processin
 (a pasted document, a web page, a tool result).
 
 ### 3. Tooling defects
-Bugs in `tools/validate_skill.py` or CI — for example, a validator that reports PASS on a SKILL.MD
+Bugs in `tools/validate_skill.py` or CI — for example, a validator that reports PASS on a SKILL.md
 with L4 removed.
 
 ## Out of scope

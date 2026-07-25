@@ -25,12 +25,15 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install
-        run: pip install --quiet pyyaml
+        run: pip install --quiet pyyaml pytest
 
-      # Read-only. Verifies SKILL.MD is installable (frontmatter well-formed)
+      # Read-only. Verifies SKILL.md is installable (frontmatter well-formed)
       # and structurally intact (L0/L1/L4/L5 present — see NOTICE).
-      - name: Validate SKILL.MD
+      - name: Validate SKILL.md
         run: python tools/validate_skill.py
+
+      - name: Contract tests
+        run: python -m pytest -q
 
   links:
     name: internal links resolve
